@@ -211,7 +211,7 @@
 }
 
 .even img {
-  padding-left: 155px;
+  padding-left: 120px;
 }
 
 .section_5 {
