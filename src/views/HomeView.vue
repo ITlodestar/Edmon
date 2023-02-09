@@ -169,10 +169,7 @@
   background-image: url('../assets/images/section2_bg.png');
 }
 
-.section_2 img {
-  margin-top: 91px;
-}
-
+ 
 .section_3 {
   background-size: cover;
   height: 770px;
