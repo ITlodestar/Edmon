@@ -211,7 +211,7 @@
 }
 
 .even img {
-  padding-left: 255px;
+  padding-left: 155px;
 }
 
 .section_5 {
@@ -219,7 +219,7 @@
 }
 
 .odd img {
-  padding-right: 222px;
+  padding-right: 122px;
 }
 
 .section_6 {
