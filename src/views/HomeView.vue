@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="section  V_display section_4">
-        <img src="../assets/images/Maskgroup (1).png" alt="Mask group (1)" />
+        <img src="../assets/images/Maskgroup(1).png" alt="Mask group (1)" />
         <div>
           <h3>Batch transcribe</h3>
           <p>With just a few clicks, you can open an Avid project file, select the clips you want to transcribe, and in
@@ -44,10 +44,10 @@
           <p>The transcribed video is stored on our cloud platform, accessible from anywhere and organized in a way that
             matches your Media Composer project.</p>
         </div>
-        <img src="../assets/images/Maskgroup (2).png" alt="Mask group (1)" />
+        <img src="../assets/images/Maskgroup(2).png" alt="Mask group(1)" />
       </div>
       <div class="section  V_display section_6">
-        <img src="../assets/images/Maskgroup (3).png" alt="Mask group (1)" />
+        <img src="../assets/images/Maskgroup(3).png" alt="Mask group(1)" />
         <div>
           <h3>Text based editing</h3>
           <p>Browse through the text, pick and choose the parts you want, and add them to a rough cut. The process of
@@ -64,7 +64,7 @@
             Media Composer for fine-tuning. With our AAF exports, you'll be able to link back to your original Media
             Composer clips instantly.</p>
         </div>
-        <img src="../assets/images/Maskgroup (4).png" alt="Mask group (1)" />
+        <img src="../assets/images/Maskgroup(4).png" alt="Mask group (1)" />
       </div>
       <div class="section learn grid">
         <h1>Less pain - more editing.</h1>
