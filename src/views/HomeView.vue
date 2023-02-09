@@ -4,7 +4,7 @@
 
 <template>
   <div class="max-w-1440">
-    <div >
+    <div>
       <div class="section grid">
         <p class="font-white title">Never transcribe manually again</p>
         <p class="content">
@@ -29,7 +29,7 @@
           <h5>Watch video</h5>
         </div>
       </div>
-      <div class="section  V_display section_4">
+      <div class="section  V_display even section_4">
         <img src="../assets/images/Maskgroup(1).png" alt="Mask group (1)" />
         <div>
           <h3>Batch transcribe</h3>
@@ -38,7 +38,7 @@
         </div>
 
       </div>
-      <div class="section  V_display section_5">
+      <div class="section  V_display odd section_5">
         <div>
           <h3>Online access</h3>
           <p>The transcribed video is stored on our cloud platform, accessible from anywhere and organized in a way that
@@ -46,7 +46,7 @@
         </div>
         <img src="../assets/images/Maskgroup(2).png" alt="Mask group(1)" />
       </div>
-      <div class="section  V_display section_6">
+      <div class="section  V_display even section_6">
         <img src="../assets/images/Maskgroup(3).png" alt="Mask group(1)" />
         <div>
           <h3>Text based editing</h3>
@@ -57,7 +57,7 @@
         </div>
 
       </div>
-      <div class="section  V_display section_7">
+      <div class="section  V_display odd section_7">
         <div>
           <h3>Roundtrip from MC to EdMon (and back)</h3>
           <p>Enjoy the convenience of editing a rough cut in text instead of video, and send your final product back to
@@ -90,13 +90,13 @@
 </template>
 
 <style scoped>
- .grid{
+.grid {
   display: grid;
- }
+}
 
 .section .title {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 600;
   font-size: 100px;
@@ -106,7 +106,7 @@
 
 .content {
   margin: 10px 349px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -155,7 +155,7 @@
 
 .mailinput input {
   background-color: #fff0;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -165,6 +165,7 @@
 
 .section_2 {
   background-size: cover;
+  height: 868px;
   background-image: url('../assets/images/section2_bg.png');
 }
 
@@ -212,7 +213,7 @@
   background-image: url('../assets/images/section4_bg.png');
 }
 
-.section_4 img {
+.even img {
   padding-left: 255px;
 }
 
@@ -220,7 +221,7 @@
   background-image: url('../assets/images/section5_bg.png');
 }
 
-.section_5 img {
+.odd img {
   padding-right: 222px;
 }
 
@@ -228,16 +229,9 @@
   background-image: url('../assets/images/section6_bg.png');
 }
 
-.section_6 img {
-  padding-left: 255px;
-}
-
+ 
 .section_7 {
   background-image: url('../assets/images/section7_bg.png');
-}
-
-.section_7 img {
-  padding-right: 222px;
 }
 
 .V_display div {
@@ -285,15 +279,53 @@
 }
 
 @media (max-width: 1200px) {
-  .section.grid{
-    text-align: left; 
+  .section.grid {
+    text-align: left;
   }
-  .section.grid p{
+
+  .section.grid p {
     text-align: left;
     margin-left: 7%;
   }
-  .section .title{
-    margin-bottom: 0;
+
+  .section .title {
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    line-height: 1.1;
+  }
+
+ 
+
+  img {
+    padding:0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_2,
+  .section_3,
+  .section_4,
+  .section_5,
+  .section_6 {
+    display: grid;
+    align-items: center;
+  }
+  .V_display div {
+    max-width: 268px;
+    margin: 0; 
+  }
+
+  .V_display div p {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #F1F1F1;
+  }
+
+  .V_display div h3 {
+    font-size: 32px;
+    color: #E0E0E0;
   }
 }
 

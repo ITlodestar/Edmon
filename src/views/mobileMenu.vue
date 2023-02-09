@@ -62,6 +62,7 @@ export default {
     background: transparent;
     height: 46px; 
     z-index: 9999;
+    margin-right: 20px;
   }
 
   .spinner:nth-child(2n) {

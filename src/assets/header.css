@@ -12,7 +12,6 @@ header div{
     height: 100px;
     align-items: center;
     justify-content: space-between;
-    
 }
 .logo {
     display: block;
@@ -24,7 +23,7 @@ nav {
     width: 100%;
     text-align: center;
     margin-right: 100px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

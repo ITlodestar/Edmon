@@ -14,10 +14,9 @@ a,
 }
 
 .section {
-  max-width: 1440px;
-  max-height: 753px;
+  max-width: 1440px; 
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -38,7 +37,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Inter',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 500; 
   line-height: 141.52%;
@@ -62,4 +61,8 @@ input {
 }
 .headroom--unpinned {
     transform: translateY(-100%);
+}
+
+@media (max-width: 900px) {
+  
 }
