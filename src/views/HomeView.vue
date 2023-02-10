@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="max-w-1440">
-    <div>
+  <div>
+    <div class="max-w-1440">
       <div class="section grid">
         <p class="font-white title">Never transcribe manually again</p>
         <p class="content">
@@ -66,22 +66,22 @@
         </div>
         <img src="../assets/images/Maskgroup(4).png" alt="Mask group (1)" />
       </div>
-      <div class="section learn grid">
-        <h1>Less pain - more editing.</h1>
-        <p>
-          EdMon is a professional tool specifically designed for Avid editors. It can transcribe multiple video files in
-          one go, created for editors who need to transcribe large volumes of video content (like hours of interviews
-          for a documentary).</p>
-        <br />
-        <p>In short, EdMon is the ideal solution for Avid editors who need to transcribe large amounts of video content
-          quickly and efficiently. Less pain - more editing.
+    </div>
+    <div class="section learn">
+      <h1>Less pain - more editing.</h1>
+      <p>
+        EdMon is a professional tool specifically designed for Avid editors. It can transcribe multiple video files in
+        one go, created for editors who need to transcribe large volumes of video content (like hours of interviews
+        for a documentary).</p>
+      <br />
+      <p>In short, EdMon is the ideal solution for Avid editors who need to transcribe large amounts of video content
+        quickly and efficiently. Less pain - more editing.
 
-        </p>
-        <div class="section_center">
-          <div class="mailinput">
-            <input placeholder="Enter your email" />
-            <button>Request Beta Access</button>
-          </div>
+      </p>
+      <div class="section_center">
+        <div class="mailinput">
+          <input placeholder="Enter your email" />
+          <button>Request Beta Access</button>
         </div>
       </div>
     </div>
@@ -248,6 +248,8 @@
 }
 
 .learn {
+  width: 100%;
+  max-width: initial;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(29, 52, 254, 0.224) 134.17%);
 }
 
@@ -257,6 +259,7 @@
   line-height: 141.52%;
   /* or 113px */
   margin: 13px;
+  max-width: 928px;
   text-align: center;
   letter-spacing: 0.04em;
 
@@ -444,6 +447,7 @@
     line-height: 17px;
     max-width: 153px
   }
+
   .section_4 {
     background-image: url('../assets/images/mobileCard.png');
     height: 228px;

@@ -53,9 +53,9 @@ export default {
         </nav>
       </div>
     </div>
-  </header>
-
+  </header> 
   <RouterView />
+
   <footer>
     ©2023 EdMon.AI | All rights reserved.
     <div>
