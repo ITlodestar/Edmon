@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="section  section_2 ">
+      <div class="section  section_2">
         <img src="../assets/images/section2.png" alt="image" />
       </div>
       <div class="section  section_3">
@@ -29,7 +29,7 @@
           <h2>Watch video</h2>
         </div>
       </div>
-      <div class="section  V_display even section_4">
+      <div class="section  card even section_4">
         <img src="../assets/images/Maskgroup(1).png" alt="Mask group (1)" />
         <div>
           <h3>Batch transcribe</h3>
@@ -38,7 +38,7 @@
         </div>
 
       </div>
-      <div class="section  V_display odd section_5">
+      <div class="section  card odd section_5">
         <div>
           <h3>Online access</h3>
           <p>The transcribed video is stored on our cloud platform, accessible from anywhere and organized in a way that
@@ -46,7 +46,7 @@
         </div>
         <img src="../assets/images/Maskgroup(2).png" alt="Mask group(1)" />
       </div>
-      <div class="section  V_display even section_6">
+      <div class="section  card even section_6">
         <img src="../assets/images/Maskgroup(3).png" alt="Mask group(1)" />
         <div>
           <h3>Text based editing</h3>
@@ -57,7 +57,7 @@
         </div>
 
       </div>
-      <div class="section  V_display odd section_7">
+      <div class="section  card odd section_7">
         <div>
           <h3>Roundtrip from MC to EdMon (and back)</h3>
           <p>Enjoy the convenience of editing a rough cut in text instead of video, and send your final product back to
@@ -71,10 +71,9 @@
         <p>
           EdMon is a professional tool specifically designed for Avid editors. It can transcribe multiple video files in
           one go, created for editors who need to transcribe large volumes of video content (like hours of interviews
-          for
-          a documentary).
-          <br />
-          In short, EdMon is the ideal solution for Avid editors who need to transcribe large amounts of video content
+          for a documentary).</p>
+        <br />
+        <p>In short, EdMon is the ideal solution for Avid editors who need to transcribe large amounts of video content
           quickly and efficiently. Less pain - more editing.
 
         </p>
@@ -178,7 +177,7 @@
 }
 
 .section_3 p {
-  max-width: 928px; 
+  max-width: 928px;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -200,11 +199,11 @@
 
 }
 
-.V_display {
+.card {
   flex-direction: row;
   background-repeat: no-repeat;
   background-position: center;
-
+  border-radius: 12px;
 }
 
 .section_4 {
@@ -232,18 +231,18 @@
   background-image: url('../assets/images/section7_bg.png');
 }
 
-.V_display div {
+.card div {
   max-width: 268px;
   margin: 32px 94px 0 108px;
 }
 
-.V_display div p {
+.card div p {
   margin-top: 32px;
   font-size: 18px;
   color: #F1F1F1;
 }
 
-.V_display div h3 {
+.card div h3 {
   font-size: 32px;
   color: #E0E0E0;
 }
@@ -281,9 +280,8 @@
     text-align: left;
   }
 
-  .section.grid p {
-    text-align: left;
-    margin-left: 7%;
+  .content {
+    margin: 50px;
   }
 
   .section .title {
@@ -292,17 +290,15 @@
     font-weight: 600;
     letter-spacing: -.03em;
     line-height: 1.1;
-    
   }
 
   .section_2 img {
     width: 90%;
   }
 
-  .V_display img {
+  .card img {
     width: 40%;
-    min-width: 370px;
-    border-radius: 30px;
+    min-width: 162px;
   }
 
   img {
@@ -312,87 +308,168 @@
 
 @media (max-width: 768px) {
 
-  .section_2,
-  .section_4,
-  .section_5,
-  .section_6 {
+  .section_2 {
     display: grid;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    justify-items: center; 
+    justify-items: center;
     align-content: center;
     height: auto;
   }
-  .section .title { 
-    font-weight: 91;
-    font-size: 56px;
-  }
-  .odd{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .section.grid p {
-    text-align: left; 
-    max-width: 375px;
-  }
-  .section_3{
-    display: flex;
-    align-items: flex-start;
-  }
-  .section_3 p{
-    text-align: left;
-    margin-left: 7%;
-  }
-  .watch_btn_t{
-    margin-left: 7%;
-  }
-  .V_display {
-    background-image: none;
-  }
-  .V_display div {
-    max-width: 375px;
-    margin: 0;
-  }
-  .V_display div h3 {
-    margin-top: 30px;
-    font-size: 3rem;
-    font-style: normal;
+
+  .section .title {
     font-weight: 600;
-    letter-spacing: -.015em;
-    line-height: 1.2;
-  }
-  .V_display div p {
-    margin-top: 12px;
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.4;
-    margin-bottom: 40px;
-  }
-
-  .V_display div h3 {
-    font-size: 32px;
-    color: #E0E0E0;
-  }
-
-  .mailinput {
-    width: 90%;
-  }
-
-  .mailinput input  {
-    width: auto;
+    font-size: 40px;
   }
 
   .content {
     margin: auto;
+    max-width: 321px;
+    margin-top: 0;
+  }
+
+
+  .section.grid p {
+    text-align: left;
+    max-width: 358px;
+    margin-bottom: 0;
+  }
+
+  .section_3 {
+    display: flex;
+    align-items: flex-start;
+    height: 232px;
+  }
+
+  .section_3 p {
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 41px;
+    font-size: 18px;
+    max-width: 323px;
+  }
+
+  .watch_btn_t {
+    margin-left: 7%;
+    font-size: 16px;
+  }
+
+
+
+
+
+  .mailinput {
+    width: 90%;
+    min-width: 359px;
+    height: 48px;
+    padding-left: 16px;
+  }
+
+  .mailinput input {
+    width: 180px;
+  }
+
+  .mailinput button {
+    width: 174px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    height: 37px;
+  }
+
+  .learn h1 {
+    width: 358px;
+    height: 96px;
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 16px;
+    color: #FFFFFF;
+  }
+
+  .learn p {
+    margin-left: 16px;
+    font-size: 16px;
   }
 
   .section.learn.grid {
     height: auto !important;
   }
-  .section.learn.grid .section_center{
+
+  .section.learn.grid .section_center {
     margin-bottom: 100px;
+  }
+
+
+
+}
+
+@media (max-width: 648px) {
+  .section .title {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .mailinput input {
+    width: 164px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card div {
+    max-width: 375px;
+    margin: 0;
+    margin-left: 19px;
+  }
+
+  .card div h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.52%;
+    /* or 25px */
+    max-width: 164px;
+    letter-spacing: 0.04em;
+  }
+
+  .card div p {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 153px
+  }
+  .section_4 {
+    background-image: url('../assets/images/mobileCard.png');
+    height: 228px;
+    margin-bottom: 40px;
+  }
+
+
+
+  .section_5 {
+    background-image: url('../assets/images/mobileCard1.png');
+    height: 208px;
+    margin-bottom: 40px;
+  }
+
+
+  .section_6 {
+    background-image: url('../assets/images/mobileCard2.png');
+    height: 346px;
+    margin-bottom: 40px;
+  }
+
+
+  .section_7 {
+    background-image: url('../assets/images/mobileCard3.png');
+    height: 333px;
+    margin-bottom: 40px;
   }
 }
 </style>

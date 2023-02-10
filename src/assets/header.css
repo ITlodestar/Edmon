@@ -1,21 +1,26 @@
 header {
-    line-height: 1.5; 
+    line-height: 1.5;
     z-index: 1;
     position: fixed;
     width: 100%;
     background: linear-gradient(180deg, rgba(29, 52, 254, 0.224) 0%, rgba(0, 0, 0, 0) 134.17%);
     box-shadow: inset 0px -0.5px 0px rgba(255, 255, 255, 0.25);
-    
+
 }
-header div{
+
+header div {
     display: flex;
     height: 100px;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo {
     display: block;
     margin-left: 100px;
+    width: 54px;
+    height: 54px;
+    z-index: 9999;
 }
 
 nav {
@@ -48,7 +53,7 @@ nav a:first-of-type {
     border: 0;
 }
 
-nav .access-btn {
+.access-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -61,13 +66,37 @@ nav .access-btn {
     background: #1D34FE;
     border-radius: 32px;
     flex: none;
-    order: 1;
     flex-grow: 0;
     margin-left: 8px;
+    z-index: 9999;
 }
-
+.mobile.access-btn{
+    display: none;
+}
 @media (max-width: 1200px) {
+    .logo {
+        width:32px;
+        height: 32px;
+        margin-left: 16px;
+        
+    }
+    .mobile.access-btn{
+        display: block;
+    }
     .wrapper {
         display: none;
+    }
+
+    header div {
+        height: 64px;
+    }
+
+    .access-btn {
+        height: 37px;
+        width: 173px;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 10px 16px ;
+        margin-right: 16px;
     }
 }

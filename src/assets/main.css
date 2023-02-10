@@ -17,6 +17,7 @@ a,
   max-width: 1440px; 
   align-items: center;
   font-family: var(--font-main);
+  line-height: 141.52%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -60,7 +61,7 @@ input {
     transform: translateY(0%);
 }
 .headroom--unpinned {
-    transform: translateY(-100%);
+    transform: translateY(-500%);
 }
 
 @media (max-width: 900px) {

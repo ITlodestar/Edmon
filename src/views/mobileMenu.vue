@@ -1,6 +1,9 @@
 <script>
+
+import { RouterLink, RouterView } from 'vue-router'
+
 export default {
-  
+
   data() {
     return {
       showMobileMenu: false,
@@ -15,59 +18,81 @@ export default {
 </script>
 
 <template>
-  <div class="spinner-master" :class="this.showMobileMenu ? 'active' : ''">
-    <div id="spinner-form" className="spinner-spin" @click="showMenu()">
-      <div className="spinner diagonal part-1"></div>
-      <div className="spinner horizontal"></div>
-      <div className="spinner diagonal part-2"></div>
-    </div>
-    <div id="mobileMenu" class="mobileMenu" :class="this.showMobileMenu ? 'active' : ''" @click="showMenu()">
-      <ul class="responsivemenu">
-        <li>Menu</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+  <div>
+    <div class="line_header " :class="this.showMobileMenu ? 'active' : ''"></div>
+    <RouterLink to="/about" class="mobile access-btn">Request Beta Access</RouterLink>
+    <div class="spinner-master" :class="this.showMobileMenu ? 'active' : ''">
+      <div id="spinner-form" className="spinner-spin" @click="showMenu()">
+        <div className="spinner diagonal part-1"></div>
+        <div className="spinner horizontal"></div>
+        <div className="spinner diagonal part-2"></div>
+      </div>
+
+      <div id="mobileMenu" class="mobileMenu" :class="this.showMobileMenu ? 'active' : ''" @click="showMenu()">
+        <ul class="responsivemenu">
+          <li>
+            <RouterLink to="/" class="project-btn">Product</RouterLink>
+          </li>
+          <li><a href="https://edmon-test.web.app/" class="about-btn">Sign in</a></li>
+        </ul>
+      </div>
     </div>
   </div>
+
 </template>
 
 <style   scoped>
 /* Responsive */
-#mobileMenu{
+#mobileMenu {
   display: none;
 }
+
+.line_header {
+  display: none;
+  width: 100%;
+  height: 1px;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  z-index: 9999;
+  background-color: #f5f5f594;
+}
+
+.line_header.active {
+  display: flex;
+}
+
 @media(max-width: 1200px) {
   .spinner-spin {
-    width: 46px;
-    height: 46px;
+    width: 24px;
+    height: 24px;
   }
 
   .spinner-form {
-    display: block;  
+    display: block;
   }
 
-  .spinner-master * { 
+  .spinner-master * {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     flex-wrap: wrap;
     z-index: 999;
   }
 
   .spinner-master {
-    width: 144px;
+    width: 50px;
     position: relative;
     display: flex;
     align-items: center;
     background: transparent;
-    height: 46px; 
-    z-index: 9999;
-    margin-right: 20px;
+    height: 46px;
+    z-index: 9990;
   }
 
-  .spinner:nth-child(2n) {
+  /* .spinner:nth-child(2n) {
     width: 70% !important
-  }
+  } */
 
   .spinner-master label {
     cursor: pointer;
@@ -94,39 +119,53 @@ export default {
   .spinner-master.active .spinner-spin>.diagonal.part-1 {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-    margin-top: 27px;
+    margin-top: 9px;
   }
 
   .spinner-master.active .spinner-spin>.diagonal.part-2 {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-    margin-top: -25px;
+    margin-top: -20px;
   }
 
- 
+
   #mobileMenu {
     position: absolute;
     top: 0;
-    left: 0;  
+    left: 0;
     z-index: 99;
-    overflow: hidden; 
-    background-color: rgba(13,13,24,.7);
+    overflow: hidden;
+    background-color: rgba(13, 13, 24, .7);
     --nav-saturate: 150%;
-    -webkit-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s; 
+    -webkit-transition: all 0.4s ease 10s;
+    transition: all 0.4s ease 10s;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 127.19%;
+    /* identical to box height, or 31px */
+
+    text-align: right;
+    letter-spacing: 0.035em;
   }
 
-  #mobileMenu.active{
+  #mobileMenu.active {
     max-height: 100em;
-    overflow: auto; 
-    visibility: visible;
-    width: 50%;
-    left: 50%;
-    height: 100vh;
+    overflow: auto;
+    width: 100%;
+    height: 210px;
+    background: rgba(58, 62, 97, 0.84);
+    backdrop-filter: blur(4px);
     position: fixed;
     display: flex;
-    flex-direction:row;
+    justify-content: flex-end;
+    padding-right: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    box-shadow: inset 0px -0.5px 0px rgba(255, 255, 255, 0.25);
+    border-radius: 0px 0px 0px 72px;
+    flex-direction: row;
   }
+
   #mobileMenu>ul ul.show {
     display: flex;
     flex-direction: r;
@@ -134,17 +173,9 @@ export default {
 
   #mobileMenu>ul>li {
     display: block !important;
-    margin: 0 !important;
   }
 
-  #mobileMenu>ul>li>a,
-  #mobileMenu>ul>li>p {
-    display: block;
-    position: relative;
-    padding: 10px 0;
-    color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  }
+
 
   #mobileMenu>ul>li:last-child>a {
     border-bottom: 0px
@@ -170,6 +201,11 @@ export default {
     display: none
   }
 
+  .responsivemenu :first-child {
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+
   #mobileMenu li.has-submenu>a.active:after {
     content: "-";
   }
@@ -192,17 +228,6 @@ export default {
     border: none
   }
 
-  #mobileMenu>ul>li>a,
-  #mobileMenu>ul>li>p {
-    padding: 10px;
-    background: transparent;
-    -webkit-text-fill-color: #fff;
-    font-size: 14px;
-    letter-spacing: 1px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-    text-transform: uppercase;
-    font-weight: 500;
-  }
 
   #mobileMenu p {
     margin: 0;

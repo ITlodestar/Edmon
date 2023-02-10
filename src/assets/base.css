@@ -37,7 +37,7 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
-  --font-main: "Inter",  sans-serif;
+  --font-main: "Inter";
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }

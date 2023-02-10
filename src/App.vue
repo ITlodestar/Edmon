@@ -43,7 +43,7 @@ export default {
 <template>
   <header :class="{ 'headroom--unpinned': scrolled }" v-on="handleScroll" class="headroom header">
     <div class="max-w-1440">
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="54" height="54" />
+      <img alt="Vue logo" class="logo" src="@/assets/logo.png" />
       <mobileMenu />
       <div class="wrapper">
         <nav>
@@ -54,7 +54,7 @@ export default {
       </div>
     </div>
   </header>
-  
+
   <RouterView />
   <footer>
     ©2023 EdMon.AI | All rights reserved.
@@ -84,6 +84,9 @@ export default {
     position: absolute;
     top: 10px;
     right: 10px;
+  }
+  .wrapper .access-btn {
+    display: none;
   }
 }
 </style>
