@@ -26,7 +26,7 @@
         <p>EdMon speeds up your transcribing, searching and pre-editing of video, saving you hours of work.</p>
         <div class="watch_btn_t">
           <img src="../assets/images/watch_btn.png" alt="image" />
-          <h5>Watch video</h5>
+          <h2>Watch video</h2>
         </div>
       </div>
       <div class="section  V_display even section_4">
@@ -166,10 +166,11 @@
 .section_2 {
   background-size: cover;
   height: 868px;
+  min-height: 470px;
   background-image: url('../assets/images/section2_bg.png');
 }
 
- 
+
 .section_3 {
   background-size: cover;
   height: 770px;
@@ -177,8 +178,7 @@
 }
 
 .section_3 p {
-  max-width: 928px;
-  height: 171px;
+  max-width: 928px; 
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -191,6 +191,7 @@
 
 .watch_btn_t {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -226,7 +227,7 @@
   background-image: url('../assets/images/section6_bg.png');
 }
 
- 
+
 .section_7 {
   background-image: url('../assets/images/section7_bg.png');
 }
@@ -256,7 +257,7 @@
   font-size: 80px;
   line-height: 141.52%;
   /* or 113px */
-
+  margin: 13px;
   text-align: center;
   letter-spacing: 0.04em;
 
@@ -291,39 +292,107 @@
     font-weight: 600;
     letter-spacing: -.03em;
     line-height: 1.1;
+    
   }
 
- 
+  .section_2 img {
+    width: 90%;
+  }
+
+  .V_display img {
+    width: 40%;
+    min-width: 370px;
+    border-radius: 30px;
+  }
 
   img {
-    padding:0 !important;
+    padding: 0 !important;
   }
 }
 
 @media (max-width: 768px) {
+
   .section_2,
-  .section_3,
   .section_4,
   .section_5,
   .section_6 {
     display: grid;
-    align-items: center;
+    align-items: center; 
+    justify-content: center;
+    justify-items: center; 
+    align-content: center;
+    height: auto;
+  }
+  .section .title { 
+    font-weight: 91;
+    font-size: 56px;
+  }
+  .odd{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section.grid p {
+    text-align: left; 
+    max-width: 375px;
+  }
+  .section_3{
+    display: flex;
+    align-items: flex-start;
+  }
+  .section_3 p{
+    text-align: left;
+    margin-left: 7%;
+  }
+  .watch_btn_t{
+    margin-left: 7%;
+  }
+  .V_display {
+    background-image: none;
   }
   .V_display div {
-    max-width: 268px;
-    margin: 0; 
+    max-width: 375px;
+    margin: 0;
   }
-
+  .V_display div h3 {
+    margin-top: 30px;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    line-height: 1.2;
+  }
   .V_display div p {
     margin-top: 12px;
-    font-size: 18px;
-    color: #F1F1F1;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.4;
+    margin-bottom: 40px;
   }
 
   .V_display div h3 {
     font-size: 32px;
     color: #E0E0E0;
   }
-}
 
+  .mailinput {
+    width: 90%;
+  }
+
+  .mailinput input  {
+    width: auto;
+  }
+
+  .content {
+    margin: auto;
+  }
+
+  .section.learn.grid {
+    height: auto !important;
+  }
+  .section.learn.grid .section_center{
+    margin-bottom: 100px;
+  }
+}
 </style>

@@ -21,7 +21,7 @@ a,
   justify-content: center;
   flex-direction: column;
   height: 753px;
-  
+  background: center;
 }
 .max-w-1440{
   max-width: 1440px;
