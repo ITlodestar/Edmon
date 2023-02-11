@@ -37,7 +37,7 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
-  --font-main: "Inter";
+  --font-main: "Inter"; 
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
@@ -68,7 +68,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: #0D0D0D;
+  background: #0D0D0D !important;
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: var(--font-main);

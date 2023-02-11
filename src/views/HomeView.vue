@@ -5,7 +5,7 @@
 <template>
   <div>
     <div class="max-w-1440">
-      <div class="section grid">
+      <div class="section grid" data-aos="fade-up" data-aos-duration="3000">
         <p class="font-white title">Never transcribe manually again</p>
         <p class="content">
           Tanscribe clips from any Avid Media Composer project with ease. Say goodbye to the hassle of exporting to
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="section  section_2">
-        <img src="../assets/images/section2.png" alt="image" />
+        <img data-aos="zoom-in" data-aos-duration="3000" src="../assets/images/section2.png" alt="image" />
       </div>
       <div class="section  section_3">
         <p>EdMon speeds up your transcribing, searching and pre-editing of video, saving you hours of work.</p>
@@ -32,8 +32,8 @@
         </div>
       </div>
       <div class="section  card even section_4">
-        <img src="../assets/images/Maskgroup(1).png" alt="Mask group (1)" />
-        <div>
+        <img data-aos="flip-left" src="../assets/images/Maskgroup(1).png" alt="Mask group (1)" />
+        <div data-aos="fade-left">
           <h3>Batch transcribe</h3>
           <p>With just a few clicks, you can open an Avid project file, select the clips you want to transcribe, and in
             minutes, you/'ll have fully transcribed text available on our cloud-based platform.</p>
@@ -41,16 +41,16 @@
 
       </div>
       <div class="section  card odd section_5">
-        <div>
+        <div data-aos="fade-right">
           <h3>Online access</h3>
           <p>The transcribed video is stored on our cloud platform, accessible from anywhere and organized in a way that
             matches your Media Composer project.</p>
         </div>
-        <img src="../assets/images/Maskgroup(2).png" alt="Mask group(1)" />
+        <img data-aos="flip-right" src="../assets/images/Maskgroup(2).png" alt="Mask group(1)" />
       </div>
       <div class="section  card even section_6">
-        <img src="../assets/images/Maskgroup(3).png" alt="Mask group(1)" />
-        <div>
+        <img data-aos="flip-left" src="../assets/images/Maskgroup(3).png" alt="Mask group(1)" />
+        <div data-aos="fade-left">
           <h3>Text based editing</h3>
           <p>Browse through the text, pick and choose the parts you want, and add them to a rough cut. The process of
             editing is now faster and more efficient, allowing you to search and select in text instead of video.
@@ -60,23 +60,23 @@
 
       </div>
       <div class="section  card odd section_7">
-        <div>
+        <div data-aos="fade-right">
           <h3>Roundtrip from MC to EdMon (and back)</h3>
           <p>Enjoy the convenience of editing a rough cut in text instead of video, and send your final product back to
             Media Composer for fine-tuning. With our AAF exports, you'll be able to link back to your original Media
             Composer clips instantly.</p>
         </div>
-        <img src="../assets/images/Maskgroup(4).png" alt="Mask group (1)" />
+        <img data-aos="flip-right" src="../assets/images/Maskgroup(4).png" alt="Mask group (1)" />
       </div>
     </div>
     <div class="section learn">
-      <h1>Less pain - more editing.</h1>
-      <p>
+      <h1 data-aos="fade-up" data-aos-anchor-placement="top-center">Less pain - more editing.</h1>
+      <p data-aos="fade-right"  data-aos-duration="1000">
         EdMon is a professional tool specifically designed for Avid editors. It can transcribe multiple video files in
         one go, created for editors who need to transcribe large volumes of video content (like hours of interviews
         for a documentary).</p>
       <br />
-      <p>In short, EdMon is the ideal solution for Avid editors who need to transcribe large amounts of video content
+      <p data-aos="fade-left"  data-aos-duration="1000">In short, EdMon is the ideal solution for Avid editors who need to transcribe large amounts of video content
         quickly and efficiently. Less pain - more editing.
 
       </p>
