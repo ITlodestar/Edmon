@@ -22,7 +22,7 @@
       <div class="section  section_2">
         <img data-aos="zoom-in" data-aos-duration="3000" src="../assets/images/section2.png" alt="image" />
       </div>
-      <div class="section  section_3">
+      <div class="section  section_3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <p>EdMon speeds up your transcribing, searching and pre-editing of video, saving you hours of work.</p>
         <div class="watch_btn_t">
           <a id="play-video" class="video-play-button" href="#">
@@ -71,12 +71,13 @@
     </div>
     <div class="section learn">
       <h1 data-aos="fade-up" data-aos-anchor-placement="top-center">Less pain - more editing.</h1>
-      <p data-aos="fade-right"  data-aos-duration="1000">
+      <p data-aos="fade-right" data-aos-duration="1000">
         EdMon is a professional tool specifically designed for Avid editors. It can transcribe multiple video files in
         one go, created for editors who need to transcribe large volumes of video content (like hours of interviews
         for a documentary).</p>
       <br />
-      <p data-aos="fade-left"  data-aos-duration="1000">In short, EdMon is the ideal solution for Avid editors who need to transcribe large amounts of video content
+      <p data-aos="fade-left" data-aos-duration="1000">In short, EdMon is the ideal solution for Avid editors who need
+        to transcribe large amounts of video content
         quickly and efficiently. Less pain - more editing.
 
       </p>
