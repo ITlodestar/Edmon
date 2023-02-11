@@ -25,7 +25,9 @@
       <div class="section  section_3">
         <p>EdMon speeds up your transcribing, searching and pre-editing of video, saving you hours of work.</p>
         <div class="watch_btn_t">
-          <img src="../assets/images/watch_btn.png" alt="image" />
+          <a id="play-video" class="video-play-button" href="#">
+            <span></span>
+          </a>
           <h2>Watch video</h2>
         </div>
       </div>
@@ -192,9 +194,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 24px;
+  margin-top: 42px;
 }
 
-.watch_btn_t h5 {
+.watch_btn_t h2 {
   padding-left: 32px;
 
 }
@@ -336,6 +340,11 @@
     text-align: left;
     max-width: 358px;
     margin-bottom: 0;
+  }
+
+  .watch_btn_t h2 {
+    padding-left: 16px;
+
   }
 
   .section_3 {
